@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      grid-template-columns: 320px 419px;
+      grid-template-rows: 414px ;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .item-1{
+      background-color: #E72F24;
+    }
+
+    .item-2{
+      background-color: #F0F1EC;
+    }
+    
+    .item-3{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 295px 21px;
+      gap: 9px;
+    }
+
+    .item-3a{
+      background-color: #F0F1EC;
+    }
+
+    .item-3b{
+      background-color: #F0F1EC;
+    }
+
+    .item-4{
+      display: grid;
+      grid-template-columns: 360px 50px;
+      grid-template-rows: 324px;
+      gap: 9px;
+    }
+
+    .item-4a{
+      display: grid;
+      grid-template-columns: 198px 153px;
+      grid-template-rows: 295px 21px;
+      gap: 9px;
+    }
+
+    .item-4aa{
+      background-color:#F0F1EC;
+      grid-column: span 2;
+    }
+
+    .item-4ab{
+      background-color: #F9D01E;
+    }
+
+    .item-4ac{
+      background-color: #232629;
+    }
+
+    .item-4b{
+      display: grid;
+      grid-template-columns: 50px;
+      grid-template-rows: 120px 187px;
+      gap: 19px;
+    }
+    
+    .item-4ba{
+      background-color: #004592;
+    }
+
+    .item-4bb{
+      background-color: #F0F1EC;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="flex-container">
+    <div class="grid-container">
+      <div class="item-1 box"></div>
+      <div class="item-2 box"></div>
+      <div class="item-3 box">
+        <div class="item-3a"></div>
+        <div class="item-3b"></div>
+      </div>
+      <div class="item-4 box">
+        <div class="item-4a">
+          <div class="item-4aa"></div>
+          <div class="item-4ab"></div>
+          <div class="item-4ac"></div>
+        </div>
+        <div class="item-4b">
+          <div class="item-4ba"></div>
+          <div class="item-4bb"></div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
